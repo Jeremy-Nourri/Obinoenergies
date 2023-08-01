@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.menu-items-open {
+  @apply duration-1000 ease-out opacity-100 fixed top-0 right-0
+}
+
+.menu-items-closed {
+  @apply duration-1000 ease-in opacity-0 fixed top-0 -right-96
+}
