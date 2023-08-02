@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }) {
         <meta name="keywords" content="Obino Energies, chauffagiste, chauffage, chaudière, pompe à chaleur, climatisation, dépannage, installation, réparation, entretien, énergie" />
         <meta name="author" content="Obino Energies" />
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
       <Component {...pageProps} />
     </>
