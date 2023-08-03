@@ -43,7 +43,7 @@ export default function Header() {
     
       <nav className="lg:hidden">
         <label
-          className="btn btn-circle swap swap-rotate z-50 fixed top-0 right-0 mt-2 mr-2"
+          className="btn btn-circle swap swap-rotate z-50 fixed top-0 right-0 mt-3 mr-2"
         >
           {/* this hidden checkbox controls the state */}
           <input 

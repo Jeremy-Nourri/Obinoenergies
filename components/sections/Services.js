@@ -4,30 +4,30 @@ export default function Services() {
 
   const services = [
     {
-      title: 'Chaudières',
-      image: '/images/pompe-chaleur.png',
+      title: 'Chaudière',
+      image: '/images/chaudiere.jpg',
     },
     {
-      title: 'Pompes à chaleur',
-      image: '/images/pompe-chaleur.png',
+      title: 'Pompe à chaleur',
+      image: '/images/pompe-chaleur-small.jpg',
     },
     {
-      title: 'Climatisation',
-      image: '/images/pompe-chaleur.png',
+      title: 'Climatiseur',
+      image: '/images/climatisation.jpg',
     },
     {
       title: 'Chauffe-eau',
-      image: '/images/pompe-chaleur.png',
+      image: '/images/chauffe-eau-small.jpg',
     },
   ]
 
   return (
     <div id="Services" className="px-6 ">
-        <h2 className="text-xl text-center text-white font-bold bg-blue-light rounded-md mt-6 mb-2 py-2">
+        <h2 className="text-xl text-center text-white font-bold bg-orange rounded-md mt-6 mb-2 py-2">
           Nos prestations
         </h2>
         <p className="text-sm text-justify px-2">
-          Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien votre système de chauffage et de climatisation.
+          Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
         </p>
         <div className="w-3/4 mx-auto">
           {services.map((service, index) => (
@@ -40,9 +40,9 @@ export default function Services() {
                 alt={service.title}
                 width={500}
                 height={500}
-                className="rounded-box opacity-70"
+                className="rounded-box opacity-80"
               />
-              <h2 className="w-full bg-white text-blue font-bold text-lg text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-0 z-10 rounded-b-lg">
+              <h2 className="w-full bg-white text-blue-light font-bold text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-0 z-10 rounded-b-lg py-1">
                 {service.title}
               </h2>
             </div>
