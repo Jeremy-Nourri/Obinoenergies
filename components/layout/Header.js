@@ -1,16 +1,17 @@
 import Link from "next/link";
 import Image from 'next/image'
+import { getCategories } from "@/data/dataServices";
 import { useState, useRef } from "react";
-import { Open_Sans } from 'next/font/google'
+// import { Open_Sans } from 'next/font/google'
  
-const open = Open_Sans({
-  subsets: ['latin'],
-  variable: '--font-open',
-})
+// const open = Open_Sans({
+//   subsets: ['latin'],
+//   variable: '--font-open',
+// })
 
 export default function Header() {
 
-  const categories = ["Accueil", "Prestation", "Contact"];
+  const categories = getCategories();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

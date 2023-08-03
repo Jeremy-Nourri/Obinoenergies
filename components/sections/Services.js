@@ -1,25 +1,9 @@
 import Image from 'next/image'
+import { getPrestations } from '@/data/dataServices';
 
 export default function Services() {
 
-  const services = [
-    {
-      title: 'Chaudière',
-      image: '/images/chaudiere.jpg',
-    },
-    {
-      title: 'Pompe à chaleur',
-      image: '/images/pompe-chaleur-small.jpg',
-    },
-    {
-      title: 'Climatiseur',
-      image: '/images/climatisation.jpg',
-    },
-    {
-      title: 'Chauffe-eau',
-      image: '/images/chauffe-eau-small.jpg',
-    },
-  ]
+  const services = getPrestations();
 
   return (
     <div id="Services" className="px-6 ">
