@@ -1,5 +1,7 @@
 export const categories = ["Accueil", "Prestation", "Contact"];
 
+export const materiels = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois", "Chaudière électrique", " PAC air/air", "PAC air/eau", "PAC géothermique", "PAC hydrothermique", "Climatiseur", "Chauffe-eau"];
+
 export const prestations = [
     {
       title: 'Chaudière',
