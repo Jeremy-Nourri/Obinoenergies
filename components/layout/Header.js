@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center p-2 z-30 bg-blue">
       <Image 
-        src="/images/logo-background-blue.jpg"
+        src="/images/logo-background-blue-medium.png"
         alt="Obino Energies"
         width={150}
         height={150}
