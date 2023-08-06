@@ -7,7 +7,7 @@ export default function Services() {
 
   return (
     <div id="Services" className="px-6 ">
-      <h2 className="text-xl text-center text-white font-bold bg-orange rounded-md mt-6 mb-2 py-2">
+      <h2 className="text-xl text-center text-white font-bold bg-blue rounded-md mt-6 mb-2 py-4">
 					Nos prestations
       </h2>
       <p className="text-sm text-justify px-2">

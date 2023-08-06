@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-export function EmailForm () {
+export default function EmailForm () {
 
   const [emailValid, setEmailValid] = useState(null);
 

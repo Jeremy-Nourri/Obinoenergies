@@ -1,8 +1,12 @@
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import { BsFillTelephoneFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
+
 import { getMaterials } from "@/data/dataServices";
+
 import Modal from "@/components/ui/Modal";
-import { EmailForm } from "../ui/EmailForm";
+import EmailForm from "../ui/EmailForm";
+import CategorieTitle from "../ui/CategorieTitle";
 
 export default function Contact() {
 
@@ -10,6 +14,7 @@ export default function Contact() {
 
   const [modalType, setModalType] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [showNumberPhone, setShowNumberPhone] = useState(false);
   
   const handleModalClose = () => {
     setShowModal(false);
@@ -39,16 +44,41 @@ export default function Contact() {
   const form = useRef();
 
   return (
-    <div className="w-full flex items-center justify-center my-12">
+    <div className="w-full my-12 px-6">
+
+      <CategorieTitle text="Contactez-nous" />
+      
+      <div className="flex flex-col items-center justify-center px-2 my-8">
+
+        <div className="flex content-center justify-center">
+          <BsFillTelephoneFill className="text-xl text-orange mr-2" />
+          <p className="text-lg leading-none underline font-semibold text-gray-800 mb-5">
+              Par téléphone
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <button type="button" onClick={setShowNumberPhone} className="w-48 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3">
+            {showNumberPhone ? "0700000000" : "Afficher le numéro"}
+          </button>
+
+        </div>
+
+      </div>
+      
+      <div className="flex content-center justify-center">
+        <BsFillEnvelopeAtFill className="text-xl text-orange mr-2" />
+        <p className="text-lg leading-none underline font-semibold text-gray-800">
+          Par e-mail
+        </p>
+      </div>
+
       <form 
-        className="bg-white dark:bg-gray-800 shadow rounded py-16 lg:px-28 px-8"
+        className="bg-white shadow rounded py-2 lg:px-28 px-6"
         ref={form}
         onSubmit={sendEmail}
       >
-        <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700 dark:text-white">
-          Contactez-nous
-        </p>
-        <p></p>
+
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
             <label htmlFor="name" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
@@ -66,23 +96,8 @@ export default function Contact() {
             />
           </div>
           <EmailForm />
-
-          {/* <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-            <label htmlFor="email" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
-              Adresse e-mail
-            </label>
-            <input 
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-              tabIndex="0"
-              arial-label="Entrez votre adresse e-mail" 
-              type="email"
-              name="email"
-              placeholder="Entrez votre adresse e-mail"
-              required
-              autoComplete="name"
-            />
-          </div> */}
         </div>
+
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
             <label htmlFor="phone" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
@@ -99,6 +114,7 @@ export default function Contact() {
               autoComplete="name"
             />
           </div>
+
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
             <label htmlFor="address" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
               Adresse
@@ -114,7 +130,8 @@ export default function Contact() {
               autoComplete="name"
             />
           </div>
-        </div>                    
+        </div>
+
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
             <label htmlFor="prestation" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
@@ -139,6 +156,7 @@ export default function Contact() {
               </option>
             </select>
           </div>
+
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
             <label htmlFor="material" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
               Matériel concerné
@@ -159,6 +177,7 @@ export default function Contact() {
             </select>
           </div>
         </div>
+
         <div>
           <div className="w-full flex flex-col mt-5">
             <label htmlFor="message" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
@@ -176,17 +195,17 @@ export default function Contact() {
             </textarea>
           </div>
         </div>
-        <p className="text-xs text-gray-600 mt-3">
+
+        <p className="text-xs text-gray-600 my-4">
           En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.
         </p>
+
         <div className="flex items-center justify-center w-full">
-          <button 
-            className="mt-4 text-base font-semibold text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
-            type="submit"
-          >
-            Envoyer
+          <button type="submit" className="w-44 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3">
+             Envoyer
           </button>
         </div>
+
       </form>
 
       {showModal &&
