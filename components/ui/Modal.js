@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
 import { AiFillCheckCircle, AiOutlineClose,  AiFillCloseCircle } from "react-icons/ai";
 
-function Modal ({ onClose, type }) {
+export default function Modal ({ onClose, type }) {
+
   const [visible, setVisible] = useState(true);
 
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setVisible(false);
-//       onClose();
-//     }, 9000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(false);
+      onClose();
+    }, 9000);
 
-//     return () => clearTimeout(timer);
-//   }, [onClose]);
+    return () => clearTimeout(timer);
+  }, [onClose]);
 
   const handleClose = () => {
     setVisible(false);
@@ -24,31 +25,33 @@ function Modal ({ onClose, type }) {
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
     >
-        <div className="relative bg-white shadow rounded-lg p-8">
-            {type === "success" ? (
-            <div className="flex items-center justify-center">
-                <AiFillCheckCircle className="text-green-500 w-8 h-8 mr-2" />
-                <p className="text-green-500" >Votre message a bien été envoyé !</p>
-                <AiOutlineClose 
-                    className="absolute top-2 right-2 cursor-pointer text-black" 
-                    onClick={handleClose}
-                />
-            </div>
-
-            ) : (
-            <div className="flex items-center justify-center">
-                <AiFillCloseCircle className="w-8 h-8 mr-2 text-red-600" />
-                <p className="text-red-600">Échec d'envoi du formulaire</p>
-                <AiOutlineClose 
-                className="absolute top-2 right-2 cursor-pointer text-black" 
-                onClick={handleClose}
+      <div className="relative bg-white shadow rounded-lg p-8" aria-live="assertive">
+        {type === "success" ? (
+          <div className="flex items-center justify-center">
+            <AiFillCheckCircle className="text-green-500 w-8 h-8 mr-2" />
+            <p className="text-green-500" >
+              Votre message a bien été envoyé !
+            </p>
+            <AiOutlineClose 
+              className="absolute top-2 right-2 cursor-pointer text-black" 
+              onClick={handleClose}
             />
-            </div>
-            )}
+          </div>
 
-        </div>
+        ) : (
+          <div className="flex items-center justify-center">
+            <AiFillCloseCircle className="w-8 h-8 mr-2 text-red-600" />
+            <p className="text-red-600">
+              Échec d'envoi du formulaire
+            </p>
+            <AiOutlineClose 
+              className="absolute top-2 right-2 cursor-pointer text-black" 
+              onClick={handleClose}
+            />
+          </div>
+        )}
+
+      </div>
     </div>
-  );
-};
-
-export default Modal;
+  )
+}
