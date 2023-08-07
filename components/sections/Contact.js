@@ -44,7 +44,7 @@ export default function Contact() {
   const form = useRef();
 
   return (
-    <div className="w-full my-12 px-6">
+    <div id="Contact" className="w-full my-20 px-6">
 
       <CategorieTitle text="Contactez-nous" />
       
@@ -52,7 +52,7 @@ export default function Contact() {
 
         <div className="flex content-center justify-center">
           <BsFillTelephoneFill className="text-xl text-orange mr-2" />
-          <p className="text-lg leading-none underline font-semibold text-gray-800 mb-5">
+          <p className="text-lg leading-none underline font-semibold mb-5">
               Par téléphone
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function Contact() {
       
       <div className="flex content-center justify-center">
         <BsFillEnvelopeAtFill className="text-xl text-orange mr-2" />
-        <p className="text-lg leading-none underline font-semibold text-gray-800">
+        <p className="text-lg leading-none underline font-semibold">
           Par e-mail
         </p>
       </div>
@@ -81,11 +81,11 @@ export default function Contact() {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="name" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="name" className="text-base font-semibold leading-none">
               Nom
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" 
+              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
               tabIndex="0"
               arial-label="Entrez votre nom"
               type="name"
@@ -100,11 +100,11 @@ export default function Contact() {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="phone" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="phone" className="text-base font-semibold leading-none">
               Téléphone
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               arial-label="Entrez votre numéro de téléphone"
               type="tel"
@@ -116,11 +116,11 @@ export default function Contact() {
           </div>
 
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
-            <label htmlFor="address" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="address" className="text-base font-semibold leading-none">
               Adresse
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               arial-label="Entrez votre adresse"
               type="address"
@@ -134,11 +134,11 @@ export default function Contact() {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="prestation" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="prestation" className="text-base font-semibold leading-none">
               Type d'intervention
             </label>
             <select
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               role="input"
               name="prestation"
@@ -158,11 +158,11 @@ export default function Contact() {
           </div>
 
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
-            <label htmlFor="material" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="material" className="text-base font-semibold leading-none">
               Matériel concerné
             </label>
             <select 
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" 
+              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
               tabIndex="0"
               role="listbox"
               name="material"
@@ -180,11 +180,11 @@ export default function Contact() {
 
         <div>
           <div className="w-full flex flex-col mt-5">
-            <label htmlFor="message" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+            <label htmlFor="message" className="text-base font-semibold leading-none">
               Message
             </label>
             <textarea
-              className="h-36 text-base text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none" 
+              className="h-36 text-base p-3 focus:border-orange mt-4 border rounded  resize-none" 
               tabIndex="0"
               aria-label="leave a message"
               role="textbox"
@@ -196,7 +196,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <p className="text-xs text-gray-600 my-4">
+        <p className="text-xs text-justify my-4">
           En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.
         </p>
 

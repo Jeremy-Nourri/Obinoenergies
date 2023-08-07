@@ -68,15 +68,14 @@ export default function Header() {
           className={`w-full flex-col items-center z-40 bg-gray-light ${isMenuOpen ? "menu-items-open" : "menu-items-closed"}`}
         >
           {categories.map((category, index) => (
-            <li 
-              key={index} 
-              className="my-2 p-4 border-b-4" 
-              onClick={() => changeChecked()}
-            >
-              <Link href={`#${category}`}>
+            <Link href={`#${category}`} key={index} >
+              <li 
+                className="my-2 p-4 border-b-4" 
+                onClick={() => changeChecked()}
+              >
                 {category}
-              </Link>
-            </li>
+              </li>
+            </Link>
           ))}
         </ul>
 

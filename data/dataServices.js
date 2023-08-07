@@ -2,13 +2,13 @@ import { categories, prestations, materials } from "./data";
 
 
 export function getCategories() {
-    return categories;
+  return categories;
 }
 
 export function getPrestations() {
-    return prestations;
+  return prestations;
 }
 
 export function getMaterials() {
-    return materials;
+  return materials;
 }
