@@ -22,6 +22,7 @@ export default function EmailForm () {
         arial-label="Entrez votre adresse e-mail" 
         type="email"
         name="email"
+        id="email"
         placeholder="Entrez votre adresse e-mail"
         required
         autoComplete="name"

@@ -90,6 +90,7 @@ export default function Contact() {
               arial-label="Entrez votre nom"
               type="name"
               name="name"
+              id="name"
               placeholder="Entrez votre nom" 
               required
               autoComplete="on"
@@ -109,6 +110,7 @@ export default function Contact() {
               arial-label="Entrez votre numéro de téléphone"
               type="tel"
               name="phone"
+              id="phone"
               placeholder="Entrez votre numéro de téléphone"
               required
               autoComplete="name"
@@ -125,6 +127,7 @@ export default function Contact() {
               arial-label="Entrez votre adresse"
               type="address"
               name="address"
+              id="address"
               placeholder="Entrez votre adresse"
               required
               autoComplete="name"
@@ -140,8 +143,8 @@ export default function Contact() {
             <select
               className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
-              role="input"
               name="prestation"
+              id="prestation"
               arial-label="Sélectionnez le type d'intervention"
               placeholder="Sélectionnez le type d'intervention"
             >
@@ -164,8 +167,8 @@ export default function Contact() {
             <select 
               className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
               tabIndex="0"
-              role="listbox"
               name="material"
+              id="material"
               arial-label="Sélectionnez le matériel"
               placeholder="Sélectionnez le matériel"
             >
@@ -184,12 +187,12 @@ export default function Contact() {
               Message
             </label>
             <textarea
-              className="h-36 text-base p-3 focus:border-orange mt-4 border rounded  resize-none" 
+              className="h-36 text-base p-3 focus:border-orange mt-4 border rounded resize-none" 
               tabIndex="0"
               aria-label="leave a message"
-              role="textbox"
               type="name"
               name="message"
+              id="message"
               required
             >
             </textarea>

@@ -31,11 +31,11 @@ export default function Header() {
         height={150}
         priority={true}
       />
-      <nav className="hidden lg:block">
-        <ul className="hidden lg:flex justify-evenly">
+      <nav className="hidden lg:block" aria-label="Obino énergies">
+        <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
             <li key={index} className="mx-2">
-              <Link href={`#${category}`}>
+              <Link href={`#${category}`} role="menuitem">
                 {category}
               </Link>
             </li>
@@ -43,9 +43,10 @@ export default function Header() {
         </ul>
       </nav>
     
-      <nav className="lg:hidden">
+      <nav className="lg:hidden" aria-label="Obino énergies">
         <label
           className="btn btn-circle swap swap-rotate z-50 fixed top-0 right-0 mt-3 mr-2"
+          htmlFor="menu-toggle"
         >
           {/* this hidden checkbox controls the state */}
           <input 
@@ -53,6 +54,8 @@ export default function Header() {
             className="w-full" 
             onChange={() => setIsMenuOpen(!isMenuOpen)} 
             ref={inputRef}
+            id="menu-toggle"
+            aria-checked={isMenuOpen}
           />
 
           <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
@@ -66,16 +69,18 @@ export default function Header() {
         <ul
           id="menu-items"
           className={`w-full flex-col items-center z-40 bg-gray-light ${isMenuOpen ? "menu-items-open" : "menu-items-closed"}`}
+          role="menubar"
+          aria-label="Obino énergies"
         >
           {categories.map((category, index) => (
-            <Link href={`#${category}`} key={index} >
-              <li 
-                className="my-2 p-4 border-b-4" 
-                onClick={() => changeChecked()}
-              >
+            <li 
+              key={index}
+              role="none"
+            >
+              <Link className="block my-2 p-5 border-b-4" href={`#${category}`} role="menuitem" onClick={() => changeChecked()}>
                 {category}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
 

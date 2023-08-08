@@ -24,8 +24,10 @@ export default function Modal ({ onClose, type }) {
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center transition-opacity duration-500 ${
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
+      role="alert"
+      aria-live='assertive'
     >
-      <div className="relative bg-white shadow rounded-lg p-8" aria-live="assertive">
+      <div className="relative bg-white shadow rounded-lg p-8">
         {type === "success" ? (
           <div className="flex items-center justify-center">
             <AiFillCheckCircle className="text-green-500 w-8 h-8 mr-2" />

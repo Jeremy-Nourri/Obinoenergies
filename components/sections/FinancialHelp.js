@@ -5,9 +5,9 @@ export default function FinancialHelp() {
   return (
     <div id="Aides" className="container mx-auto mt-20 px-6 text-justify">
       <CategorieTittle text="Aides financières" />
-      <h4 className="text-lg text-center font-bold my-4">
+      <p className="text-lg text-center font-bold my-4">
         Coup de pouce "Chauffage"
-      </h4>
+      </p>
       <p>
         Le ministère de la transition écologique et solidaire a fait le choix de massifier ce dispositif et d’aider désormais tous les particuliers à sortir des énergies fossiles et à diminuer significativement leurs factures de chauffage.
       </p>
