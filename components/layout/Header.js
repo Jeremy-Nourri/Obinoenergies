@@ -2,12 +2,7 @@ import Link from "next/link";
 import Image from 'next/image'
 import { getCategories } from "@/data/dataServices";
 import { useState, useRef } from "react";
-// import { Open_Sans } from 'next/font/google'
- 
-// const open = Open_Sans({
-//   subsets: ['latin'],
-//   variable: '--font-open',
-// })
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Header() {
 
@@ -23,7 +18,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between items-center p-2 z-30 bg-blue">
+    <header className="flex justify-between items-center py-4 px-2 z-30 bg-blue">
       <Image 
         src="/images/logo-background-blue-medium.png"
         alt="Obino Energies"
@@ -42,10 +37,16 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-    
+
+      <button className=" btn btn-circle z-50 absolute top-0 right-0 mt-6 mr-16">
+        <BsFillTelephoneFill className="text-black" />
+      </button>
+        
       <nav className="lg:hidden" aria-label="Obino énergies">
+
+
         <label
-          className="btn btn-circle swap swap-rotate z-50 fixed top-0 right-0 mt-3 mr-2"
+          className="btn btn-circle swap swap-rotate z-50 fixed top-0 right-0 mt-6 mr-2"
           htmlFor="menu-toggle"
         >
           {/* this hidden checkbox controls the state */}

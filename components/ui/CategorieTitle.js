@@ -1,4 +1,11 @@
 import PropTypes from 'prop-types';
+import { Open_Sans } from 'next/font/google'
+
+const open = Open_Sans({
+  subsets: ['latin'],
+  variable: '--font-open',
+})
+
 
 export default function CategorieTittle({ text }) {
   return (
