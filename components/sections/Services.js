@@ -17,7 +17,7 @@ export default function Services() {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="relative shadow-xl my-5 rounded-box"
+            className="relative shadow-lg my-5 rounded-box"
           >
             <Image
               src={service.image}
@@ -26,7 +26,7 @@ export default function Services() {
               height={500}
               className="rounded-box opacity-80"
             />
-            <h2 className="w-full bg-white text-blue-light font-bold text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-0 z-10 rounded-b-lg py-1">
+            <h2 className="w-full bg-white text-blue font-bold text-center absolute bottom-0 z-10 rounded-b-lg py-1">
               {service.title}
             </h2>
           </div>

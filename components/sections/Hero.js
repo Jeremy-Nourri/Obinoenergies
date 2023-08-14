@@ -24,23 +24,16 @@ export default function Hero() {
         height={500}
       />
 
-      <div className="my-6 mx-6 py-4 px-2 text-justify border-y-8 rounded-md border-blue">
+      <div className="my-6 mx-6 py-4 px-4 text-justify border-y-8 rounded-md border-blue shadow-lg">
         <p className="text-justify">
           Vous recherchez un chauffagiste professionnel pour entretenir vos systèmes de chauffage et de climatisation ? 
         </p>
         <p className="mt-1">
           Vous souhaitez faire installer une nouvelle chaudière ou une pompe à chaleur ? 
         </p>
-        <p className="mt-1">
-          Vous avez besoin d'un dépannage ?
-        </p>
         <p className="mt-1  font-semibold">
           Obino Energies est à votre service pour répondre à tous vos besoins de chauffage et de climatisation.
         </p>
-        <p className="mt-2">
-          N'hésitez pas à nous contacter notre équipe vous apportera les informations nécessaires et planifiera une intervention selon vos disponibilités.
-        </p>
-
       </div>
       
     </>

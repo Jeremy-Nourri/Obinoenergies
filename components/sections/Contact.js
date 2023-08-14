@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Link from "next/link";
 import emailjs from '@emailjs/browser';
 import { BsFillTelephoneFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
 
@@ -14,7 +15,6 @@ export default function Contact() {
 
   const [modalType, setModalType] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [showNumberPhone, setShowNumberPhone] = useState(false);
   
   const handleModalClose = () => {
     setShowModal(false);
@@ -58,9 +58,14 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col items-center">
-          <button type="button" onClick={setShowNumberPhone} className="w-48 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3">
-            {showNumberPhone ? "0700000000" : "Afficher le numéro"}
-          </button>
+          <Link 
+            className="w-48 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3"
+            href="tel:0700000000"
+            title="Appeler Obino Energies"
+            role="button"
+          >
+            0700000000
+          </Link>
 
         </div>
 
@@ -74,7 +79,7 @@ export default function Contact() {
       </div>
 
       <form 
-        className="bg-white shadow rounded py-2 lg:px-28 px-6"
+        className="bg-white shadow-lg rounded py-2 lg:px-28 px-6 pb-6"
         ref={form}
         onSubmit={sendEmail}
       >
