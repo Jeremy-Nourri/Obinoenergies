@@ -35,6 +35,14 @@ export default function Hero() {
           Obino Energies est à votre service pour répondre à tous vos besoins de chauffage et de climatisation.
         </p>
       </div>
+
+      <Image
+        className="mb-28"
+        src="/images/entretien-chaudiere.png"
+        alt="Offre entretien chaudière 90€"
+        width={500}
+        height={500}
+      />
       
     </>
 

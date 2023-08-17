@@ -1,11 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import CategorieTittle from "../ui/CategorieTitle";
 
 export default function Guide() {
   return (    
-    <div id="Guide" className="container mx-auto mt-20 px-6">
-      <CategorieTittle text="Guide" />
+    <>
       <Image
         src="/images/changer-de-chauffage.jpg"
         alt="Première de couverture du guide changer de chauffage"
@@ -31,7 +29,7 @@ export default function Guide() {
         </p>
       </Link>
     
-    </div>
+    </>
   );    
 }
 

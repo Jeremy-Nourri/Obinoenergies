@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from 'react-scroll';
 import Image from 'next/image'
 import { getCategories } from "@/data/dataServices";
 import { useState, useRef } from "react";
@@ -26,7 +26,7 @@ export default function Header() {
         height={150}
         priority={true}
       />
-      <nav className="hidden lg:block" aria-label="Obino énergies">
+      {/* <nav className="hidden lg:block" aria-label="Obino énergies">
         <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
             <li key={index} className="mx-2">
@@ -36,7 +36,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-      </nav>
+      </nav> */}
 
       <button className=" btn btn-circle z-50 absolute top-0 right-0 mt-6 mr-16">
         <BsFillTelephoneFill className="text-black" />
@@ -69,7 +69,7 @@ export default function Header() {
 
         <ul
           id="menu-items"
-          className={`w-full flex-col items-center z-40 bg-gray-light ${isMenuOpen ? "menu-items-open" : "menu-items-closed"}`}
+          className={`w-full flex-col items-center z-40 bg-blue ${isMenuOpen ? "menu-items-open" : "menu-items-closed"}`}
           role="menubar"
           aria-label="Obino énergies"
         >
@@ -78,7 +78,8 @@ export default function Header() {
               key={index}
               role="none"
             >
-              <Link className="block my-2 p-5 border-b-4" href={`#${category}`} role="menuitem" onClick={() => changeChecked()}>
+              <Link className="block text-white text-xl font-semibold my-2 pl-4 py-7 border-b-4" 
+                to={`${category}`} smooth duration={1000} role="menuitem" onClick={() => changeChecked()}>
                 {category}
               </Link>
             </li>

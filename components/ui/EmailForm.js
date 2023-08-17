@@ -30,8 +30,9 @@ export default function EmailForm () {
         onChange={handleChangeEmail}
       />
       {emailValid === false && (
-        <p className="text-red-500 text-sm mt-2" role="alert" aria-live="assertive"
-        >Veuillez entrer une adresse e-mail valide</p>
+        <p className="text-red-500 text-sm mt-2" role="alert" aria-live="assertive">
+          Veuillez entrer une adresse e-mail valide
+        </p>
       )}
     </div>
   );

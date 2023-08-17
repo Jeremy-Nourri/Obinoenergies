@@ -5,6 +5,7 @@ import Services from '@/components/sections/Services'
 import FinancialHelp from '@/components/sections/FinancialHelp'
 import Guide from '@/components/sections/Guide'
 import Contact from '@/components/sections/Contact'
+import LayoutSection from '@/components/layout-section/LayoutSection'
 
 export default function Page() {
   return (
@@ -14,10 +15,18 @@ export default function Page() {
       </Head>
       <Layout>
         <Hero />
-        <Services />
-        <FinancialHelp />
-        <Guide />
-        <Contact />
+        <LayoutSection categoryName="Nos prestations">
+          <Services />
+        </LayoutSection>
+        <LayoutSection categoryName="Aides financières">
+          <FinancialHelp />
+        </LayoutSection>
+        <LayoutSection categoryName="Guide">
+          <Guide />
+        </LayoutSection>
+        <LayoutSection categoryName="Contact">
+          <Contact />
+        </LayoutSection>  
       </Layout>
     </>    
   )

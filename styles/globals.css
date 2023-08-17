@@ -33,3 +33,4 @@ body {
 .menu-items-closed {
   @apply duration-1000 ease-in opacity-0 fixed top-0 -right-96
 }
+

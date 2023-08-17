@@ -1,10 +1,8 @@
 import Link from "next/link";
-import CategorieTittle from "../ui/CategorieTitle";
 
 export default function FinancialHelp() {
   return (
-    <div id="Aides" className="container mx-auto mt-20 px-6 text-justify">
-      <CategorieTittle text="Aides financières" />
+    <>
       <p className="text-lg text-center font-bold my-4">
         Coup de pouce "Chauffage"
       </p>
@@ -23,7 +21,7 @@ export default function FinancialHelp() {
         </p>
       </Link>
 
-    </div>
+    </>
   );
 }
 

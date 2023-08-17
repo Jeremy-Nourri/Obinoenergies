@@ -7,7 +7,6 @@ import { getMaterials } from "@/data/dataServices";
 
 import Modal from "@/components/ui/Modal";
 import EmailForm from "../ui/EmailForm";
-import CategorieTitle from "../ui/CategorieTitle";
 
 export default function Contact() {
 
@@ -44,10 +43,7 @@ export default function Contact() {
   const form = useRef();
 
   return (
-    <div id="Contact" className="w-full my-20 px-6">
-
-      <CategorieTitle text="Contactez-nous" />
-      
+    <>      
       <div className="flex flex-col items-center justify-center px-2 my-8">
 
         <div className="flex content-center justify-center">
@@ -79,7 +75,7 @@ export default function Contact() {
       </div>
 
       <form 
-        className="bg-white shadow-lg rounded py-2 lg:px-28 px-6 pb-6"
+        className="bg-white shadow-lg rounded-lg py-2 lg:px-28 px-6 pb-6"
         ref={form}
         onSubmit={sendEmail}
       >
@@ -220,6 +216,6 @@ export default function Contact() {
         <Modal onClose={handleModalClose} type={modalType} />
       }
 
-    </div>
+    </>
   );
 }
