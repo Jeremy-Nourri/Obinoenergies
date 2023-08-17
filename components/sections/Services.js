@@ -8,8 +8,9 @@ export default function Services() {
   return (
 
     <>
+    
       <p className="text-justify px-2">
-				    Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
+				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </p>
       <div className="w-3/4 mx-auto">
         {services.map((service, index) => (

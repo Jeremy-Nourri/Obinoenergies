@@ -15,11 +15,12 @@ export default function FinancialHelp() {
       <p>
         Tous les ménages peuvent bénéficier de cette offre. Les montants de primes attribués seront cependant différenciés en fonction de leurs niveaux de ressources. Les ménages les plus modestes bénéficieront de primes plus importantes.
       </p>
-      <Link href="https://www.ecologie.gouv.fr/coup-pouce-chauffage" target="_blank">
-        <p className="text-orange font-bold cursor-pointer mt-2 text-center">
+
+      <p className="text-orange font-bold cursor-pointer mt-6 text-center">
+        <Link href="https://www.ecologie.gouv.fr/coup-pouce-chauffage" target="_blank">
           Voir le montant des primes
-        </p>
-      </Link>
+        </Link>
+      </p>
 
     </>
   );
