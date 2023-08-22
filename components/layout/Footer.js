@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer id="Footer" className="bg-blue p-4 h-52 w-full bottom-0">
       <Image
-        src="/images/logo-background-blue-medium.png"
+        src="/images/logo-background-blue.webp"
         alt="Logo Obino Energies"
         width={170}
         height={170}

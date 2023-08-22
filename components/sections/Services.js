@@ -8,7 +8,7 @@ export default function Services() {
   return (
 
     <>
-    
+
       <p className="text-justify px-2">
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </p>
@@ -16,12 +16,12 @@ export default function Services() {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="relative shadow-lg my-5 rounded-box"
+            className=" shadow-lg my-5 rounded-box relative"
           >
             <Image
               src={service.image}
               alt={service.title}
-              width={400}
+              width={500}
               height={500}
               className="rounded-box opacity-80"
             />

@@ -1,15 +1,17 @@
-import Link from "next/link";
 import Image from "next/image";
+import coverGuide from '../../public/images/changer-de-chauffage.webp'
 
 export default function Guide() {
   return (    
     <>
-      <Image
-        src="/images/changer-de-chauffage.jpg"
-        alt="Première de couverture du guide changer de chauffage"
-        width={500}
-        height={500}
-      />
+      <div className="relative h-64">
+        <Image
+          src={coverGuide}
+          alt="Première de couverture du guide changer de chauffage"
+          fill
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
       <p className="text-lg text-center font-bold mb-4">
         Changer son chauffage
       </p>

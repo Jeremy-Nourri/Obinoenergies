@@ -30,8 +30,8 @@ export default function LayoutSection({ children, categoryName }) {
               {categoryName}
             </span>
           </h2>
-          
-          <div className="mt-4 mb-36 px-6 ">
+
+          <div className="mt-4 mb-36 px-6 md:px-16 ">
             {children}
           </div>
 

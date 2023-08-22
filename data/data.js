@@ -5,19 +5,19 @@ export const materials = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois
 export const prestations = [
   {
     title: 'Chaudière',
-    image: '/images/chaudiere.jpg',
+    image: '/images/chaudiere.webp',
   },
   {
     title: 'Pompe à chaleur',
-    image: '/images/pompe-chaleur-small.jpg',
+    image: '/images/pompe-chaleur-small.webp',
   },
   {
     title: 'Climatiseur',
-    image: '/images/climatisation.jpg',
+    image: '/images/climatisation.webp',
   },
   {
     title: 'Chauffe-eau',
-    image: '/images/chauffe-eau-small.jpg',
+    image: '/images/chauffe-eau-small.webp',
   },
 ]
 

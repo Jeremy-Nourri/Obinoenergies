@@ -6,13 +6,13 @@ export default function FinancialHelp() {
       <p className="text-lg text-center font-bold my-4">
         Coup de pouce "Chauffage"
       </p>
-      <p>
+      <p className="text-justify">
         Le ministère de la transition écologique et solidaire a fait le choix de massifier ce dispositif et d’aider désormais tous les particuliers à sortir des énergies fossiles et à diminuer significativement leurs factures de chauffage.
       </p>
       <p className="mt-3 mb-2 font-bold">
         Qui peut bénéficier de l'offre « Coup de pouce » ?
       </p>
-      <p>
+      <p className="text-justify">
         Tous les ménages peuvent bénéficier de cette offre. Les montants de primes attribués seront cependant différenciés en fonction de leurs niveaux de ressources. Les ménages les plus modestes bénéficieront de primes plus importantes.
       </p>
 
