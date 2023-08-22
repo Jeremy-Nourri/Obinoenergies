@@ -20,9 +20,9 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between items-center py-4 px-2 md:py-6 md:px-6 bg-blue">
+    <header className="lg:fixed lg:z-50 lg:shadow-sm lg:shadow-zinc-500 w-full flex justify-between items-center py-4 px-2 md:py-6 lg:py-2 md:px-6 bg-blue">
     
-      <div className='w-2/5'>
+      <div className='w-2/5 lg:w-[14%]'>
         <Image 
           src={logo}
           alt="Logo Obino énergies"
@@ -34,7 +34,7 @@ export default function Header() {
 
       
 
-      {/* <nav className="hidden lg:block" aria-label="Obino énergies">
+      <nav className="hidden lg:block" aria-label="Obino énergies">
         <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
             <li key={index} className="mx-2">
@@ -44,9 +44,9 @@ export default function Header() {
             </li>
           ))}
         </ul>
-      </nav> */}
+      </nav>
 
-      <button className=" btn btn-circle md:btn-lg z-50 absolute top-5 right-16 md:top-8 md:right-32">
+      <button className="lg:hidden btn btn-circle md:btn-lg z-50 absolute top-5 right-16 md:top-12 md:right-28">
         <BsFillTelephoneFill className="text-black" />
       </button>
         
@@ -54,7 +54,7 @@ export default function Header() {
 
 
         <label
-          className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 md:top-8 md:right-8"
+          className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 md:top-12 md:right-5"
           htmlFor="menu-toggle"
         >
           {/* this hidden checkbox controls the state */}

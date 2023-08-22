@@ -13,11 +13,11 @@ export default function EmailForm () {
 
   return (
     <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-      <label htmlFor="email" className="text-base font-semibold leading-none text-gray-800 dark:text-white">
+      <label htmlFor="email" className="text-base md:text-lg font-semibold leading-none text-gray-800 dark:text-white">
         Adresse e-mail
       </label>
       <input 
-        className={`text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 ${emailValid === false ? "border-red-500 border-2" : ""}`}
+        className={`text-base md:text-lg leading-none text-gray-900 p-3 focus:oultine-none focus:border-orange mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 ${emailValid === false ? "border-red-500 border-2" : ""}`}
         tabIndex="0"
         arial-label="Entrez votre adresse e-mail" 
         type="email"

@@ -44,18 +44,18 @@ export default function Contact() {
 
   return (
     <>      
-      <div className="flex flex-col items-center justify-center px-2 my-8">
+      <div className="flex flex-col items-center justify-center px-2 my-8 md:my-12">
 
         <div className="flex content-center justify-center">
-          <BsFillTelephoneFill className="text-xl text-orange mr-2" />
-          <p className="text-lg leading-none underline font-semibold mb-5">
+          <BsFillTelephoneFill className="text-xl md:text-2xl text-orange mr-2 md:mr-4" />
+          <p className="text-lg leading-none underline font-semibold mb-5 md:mb-7 md:text-xl">
               Par téléphone
           </p>
         </div>
 
         <div className="flex flex-col items-center">
           <Link 
-            className="w-48 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3"
+            className="w-48 text-lg md:text-xl md:p-4 text-white font-semibold text-center bg-orange rounded-2xl p-3"
             href="tel:0700000000"
             title="Appeler Obino Energies"
             role="button"
@@ -67,26 +67,26 @@ export default function Contact() {
 
       </div>
       
-      <div className="flex content-center justify-center">
-        <BsFillEnvelopeAtFill className="text-xl text-orange mr-2" />
-        <p className="text-lg leading-none underline font-semibold">
+      <div className="flex justify-center items-center">
+        <BsFillEnvelopeAtFill className="text-xl md:text-3xl text-orange mr-2 md:mr-4" />
+        <p className="text-lg md:text-xl leading-none underline font-semibold">
           Par e-mail
         </p>
       </div>
 
       <form 
-        className="bg-white shadow-lg rounded-lg py-2 lg:px-28 px-6 pb-6"
+        className="bg-white shadow-lg md:shadow-xl rounded-lg md:rounded-xl py-2 md:py-8 px-6"
         ref={form}
         onSubmit={sendEmail}
       >
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="name" className="text-base font-semibold leading-none">
+            <label htmlFor="name" className="text-base md:text-lg font-semibold leading-none">
               Nom
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
+              className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
               tabIndex="0"
               arial-label="Entrez votre nom"
               type="name"
@@ -102,11 +102,11 @@ export default function Contact() {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="phone" className="text-base font-semibold leading-none">
+            <label htmlFor="phone" className="text-base md:text-lg font-semibold leading-none">
               Téléphone
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
+              className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               arial-label="Entrez votre numéro de téléphone"
               type="tel"
@@ -119,11 +119,11 @@ export default function Contact() {
           </div>
 
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
-            <label htmlFor="address" className="text-base font-semibold leading-none">
+            <label htmlFor="address" className="text-base md:text-lg font-semibold leading-none">
               Adresse
             </label>
             <input
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
+              className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               arial-label="Entrez votre adresse"
               type="address"
@@ -138,11 +138,11 @@ export default function Contact() {
 
         <div className="md:flex items-center mt-5">
           <div className="md:w-72 flex flex-col">
-            <label htmlFor="prestation" className="text-base font-semibold leading-none">
+            <label htmlFor="prestation" className="text-base md:text-lg font-semibold leading-none">
               Type d'intervention
             </label>
             <select
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
+              className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded "
               tabIndex="0"
               name="prestation"
               id="prestation"
@@ -162,11 +162,11 @@ export default function Contact() {
           </div>
 
           <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
-            <label htmlFor="material" className="text-base font-semibold leading-none">
+            <label htmlFor="material" className="text-base md:text-lg font-semibold leading-none">
               Matériel concerné
             </label>
             <select 
-              className="text-base leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
+              className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded " 
               tabIndex="0"
               name="material"
               id="material"
@@ -184,11 +184,11 @@ export default function Contact() {
 
         <div>
           <div className="w-full flex flex-col mt-5">
-            <label htmlFor="message" className="text-base font-semibold leading-none">
+            <label htmlFor="message" className="text-base md:text-lg font-semibold leading-none">
               Message
             </label>
             <textarea
-              className="h-36 text-base p-3 focus:border-orange mt-4 border rounded resize-none" 
+              className="h-36 text-base md:text-lg p-3 focus:border-orange mt-4 border rounded resize-none" 
               tabIndex="0"
               aria-label="leave a message"
               type="name"
@@ -200,12 +200,12 @@ export default function Contact() {
           </div>
         </div>
 
-        <p className="text-xs text-justify my-4">
+        <p className="text-xs md:text-base text-justify my-4">
           En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.
         </p>
 
         <div className="flex items-center justify-center w-full">
-          <button type="submit" className="w-44 text-lg text-white font-semibold text-center bg-orange rounded-2xl p-3">
+          <button type="submit" className="w-44 text-lg md:text-xl text-white font-semibold text-center bg-orange rounded-2xl p-3 md:p-4">
              Envoyer
           </button>
         </div>
