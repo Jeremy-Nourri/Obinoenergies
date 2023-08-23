@@ -20,7 +20,7 @@ export default function Header() {
   }
 
   return (
-    <header className="lg:fixed lg:z-50 lg:shadow-sm lg:shadow-zinc-500 w-full flex justify-between items-center py-4 px-2 md:py-6 lg:py-2 md:px-6 bg-blue">
+    <header className="lg:z-50 lg:shadow-sm lg:shadow-zinc-500 w-full flex justify-between items-center py-4 px-2 md:py-6 lg:py-2 md:px-6 bg-blue">
     
       <div className='w-2/5 lg:w-[14%]'>
         <Image 
@@ -30,15 +30,13 @@ export default function Header() {
           height={500}
           className='w-auto h-auto'
         />
-      </div>
-
-      
+      </div>     
 
       <nav className="hidden lg:block" aria-label="Obino énergies">
         <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
             <li key={index} className="mx-2">
-              <Link href={`#${category}`} role="menuitem">
+              <Link to={`${category}`} role="menuitem" className="text-white text-xl font-semibold" smooth duration={1000}>
                 {category}
               </Link>
             </li>
@@ -46,9 +44,17 @@ export default function Header() {
         </ul>
       </nav>
 
-      <button className="lg:hidden btn btn-circle md:btn-lg z-50 absolute top-5 right-16 md:top-12 md:right-28">
-        <BsFillTelephoneFill className="text-black" />
-      </button>
+      <div className="lg:hidden btn btn-circle md:btn-lg z-50 absolute top-5 right-16 md:top-12 md:right-28">
+        <a 
+          className="w-48 text-lg md:text-xl md:p-4 text-white font-semibold text-center rounded-2xl p-3"
+          href="tel:0700000000"
+          title="Appeler Obino Energies"
+          role="button"
+        >
+          <BsFillTelephoneFill className="text-slate-900" />
+        </a>
+
+      </div>
         
       <nav className="lg:hidden" aria-label="Obino énergies">
 

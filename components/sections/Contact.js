@@ -32,7 +32,7 @@ export default function Contact() {
       );
       if (result.status === 200) {
         setShowModal(true);
-        setModalType("success");
+        setModalType("success"); 
         form.current.reset();
       }
     } catch (error) {
@@ -54,14 +54,14 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col items-center">
-          <Link 
+          <a 
             className="w-48 text-lg md:text-xl md:p-4 text-white font-semibold text-center bg-orange rounded-2xl p-3"
             href="tel:0700000000"
             title="Appeler Obino Energies"
             role="button"
           >
             0700000000
-          </Link>
+          </a>
 
         </div>
 
