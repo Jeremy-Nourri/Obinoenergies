@@ -25,13 +25,13 @@ export default function LayoutSection({ children, categoryName }) {
           viewport={{ once: true }}
         >
 
-          <h2 className="w-[96%] text-2xl md:text-3xl text-center text-white font-bold bg-blue mb-2 py-4 md:py-6 mx-auto rounded-t-2xl md:rounded-t-3xl">
-            <span className="block w-[74%] border-orange border-b-4 md:border-b-[6px] pb-2 md:pb-4 mx-auto">
+          <h2 className="w-[96%] text-2xl text-center text-white font-bold bg-blue mb-2 py-4 mx-auto rounded-t-2xl md:text-4xl md:py-10 md:rounded-t-3xl lg:px-20">
+            <span className="block w-[74%] border-orange border-b-4 pb-2 mx-auto md:pb-4 md:border-b-[6px] ">
               {categoryName}
             </span>
           </h2>
 
-          <div className="mt-4 mb-32 px-6 md:px-16 ">
+          <div className="mt-4 mb-32 px-6 md:px-16 lg:px-32 ">
             {children}
           </div>
 

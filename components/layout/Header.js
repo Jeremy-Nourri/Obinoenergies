@@ -35,7 +35,7 @@ export default function Header() {
       <nav className="hidden lg:block" aria-label="Obino énergies">
         <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
-            <li key={index} className="mx-2">
+            <li key={index} className="mx-2 cursor-pointer">
               <Link to={`${category}`} role="menuitem" className="text-white text-xl font-semibold" smooth duration={1000}>
                 {category}
               </Link>

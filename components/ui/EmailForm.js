@@ -12,7 +12,7 @@ export default function EmailForm () {
   };
 
   return (
-    <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+    <div className="flex flex-col mt-4 md:ml-6 md:mt-0 md:w-1/2">
       <label htmlFor="email" className="text-base md:text-lg font-semibold leading-none text-gray-800 dark:text-white">
         Adresse e-mail
       </label>

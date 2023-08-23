@@ -44,7 +44,7 @@ export default function Contact() {
 
   return (
     <>      
-      <div className="flex flex-col items-center justify-center px-2 my-8 md:my-12">
+      <div className="flex flex-col items-center justify-center px-2 my-8">
 
         <div className="flex content-center justify-center">
           <BsFillTelephoneFill className="text-xl md:text-2xl text-orange mr-2 md:mr-4" />
@@ -67,7 +67,7 @@ export default function Contact() {
 
       </div>
       
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-12">
         <BsFillEnvelopeAtFill className="text-xl md:text-3xl text-orange mr-2 md:mr-4" />
         <p className="text-lg md:text-xl leading-none underline font-semibold">
           Par e-mail
@@ -75,13 +75,13 @@ export default function Contact() {
       </div>
 
       <form 
-        className="bg-white shadow-lg md:shadow-xl rounded-lg md:rounded-xl py-2 md:py-8 px-6"
+        className="bg-white shadow-lg rounded-lg py-2 px-6md:rounded-xl md:py-10 md:px-14 md:shadow-xl lg:px-52 lg:py-10"
         ref={form}
         onSubmit={sendEmail}
       >
 
-        <div className="md:flex items-center mt-5">
-          <div className="md:w-72 flex flex-col">
+        <div className="w-full md:flex items-center justify-center mt-5">
+          <div className="flex flex-col md:w-1/2">
             <label htmlFor="name" className="text-base md:text-lg font-semibold leading-none">
               Nom
             </label>
@@ -100,8 +100,8 @@ export default function Contact() {
           <EmailForm />
         </div>
 
-        <div className="md:flex items-center mt-5">
-          <div className="md:w-72 flex flex-col">
+        <div className="w-full md:flex items-center justify-center mt-5">
+          <div className="flex flex-col md:w-1/2">
             <label htmlFor="phone" className="text-base md:text-lg font-semibold leading-none">
               Téléphone
             </label>
@@ -118,7 +118,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
+          <div className="md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-5">
             <label htmlFor="address" className="text-base md:text-lg font-semibold leading-none">
               Adresse
             </label>
@@ -136,8 +136,8 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="md:flex items-center mt-5">
-          <div className="md:w-72 flex flex-col">
+        <div className=" w-full md:flex items-center justify-center mt-5">
+          <div className="md:w-1/2 flex flex-col">
             <label htmlFor="prestation" className="text-base md:text-lg font-semibold leading-none">
               Type d'intervention
             </label>
@@ -161,7 +161,7 @@ export default function Contact() {
             </select>
           </div>
 
-          <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-5">
+          <div className="flex flex-col mt-5 md:ml-6 md:mt-0 md:w-1/2">
             <label htmlFor="material" className="text-base md:text-lg font-semibold leading-none">
               Matériel concerné
             </label>
@@ -183,7 +183,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <div className="w-full flex flex-col mt-5">
+          <div className="w-full flex flex-col justify-center mt-5">
             <label htmlFor="message" className="text-base md:text-lg font-semibold leading-none">
               Message
             </label>

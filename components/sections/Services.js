@@ -9,23 +9,23 @@ export default function Services() {
 
     <>
 
-      <h3 className="text-justify mb-6 md:mb-10 md:text-xl">
+      <h3 className="text-justify mb-6 md:mb-10 md:text-2xl">
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </h3>
-      <div className="w-3/4 mx-auto">
+      <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full">
         {services.map((service, index) => (
           <div 
             key={index} 
-            className=" shadow-lg my-5 rounded-box relative"
+            className="shadow-lg my-5 mx-auto rounded-box relative lg:w-2/5"
           >
             <Image
               src={service.image}
               alt={service.title}
               width={500}
               height={500}
-              className="rounded-box opacity-80"
+              className="rounded-box opacity-80 w-full h-auto"
             />
-            <h2 className="w-full bg-white text-blue font-bold text-center absolute bottom-0 z-10 rounded-b-lg py-1 md:py-4 md:text-2xl">
+            <h2 className="w-full bg-white text-blue font-bold text-center absolute bottom-0 z-10 rounded-b-lg py-1 md:py-4 md:text-2xl lg:py-2 lg:text-xl">
               {service.title}
             </h2>
           </div>
