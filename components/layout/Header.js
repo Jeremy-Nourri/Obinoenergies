@@ -4,7 +4,7 @@ import { getCategories } from "@/data/dataServices";
 import { useState, useRef } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-import logo from '../../public/images/logo-background-blue.webp'
+import logo from '../../public/images/logo-background-blue-medium.webp'
 
 export default function Header() {
 

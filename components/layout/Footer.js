@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from '../../public/images/logo-background-blue.webp'
+import logo from '../../public/images/logo-background-blue-medium.webp'
 
 export default function Footer() {
   return (

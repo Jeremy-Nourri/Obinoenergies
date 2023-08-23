@@ -75,7 +75,7 @@ export default function Contact() {
       </div>
 
       <form 
-        className="bg-white shadow-lg rounded-lg py-2 px-6md:rounded-xl md:py-10 md:px-14 md:shadow-xl lg:px-52 lg:py-10"
+        className="bg-white shadow-lg rounded-lg py-2 px-6 md:rounded-xl md:py-10 md:px-14 md:shadow-xl lg:px-28 lg:py-6 lg:mt-8 lg:"
         ref={form}
         onSubmit={sendEmail}
       >
