@@ -3,10 +3,7 @@ export const categories = ["Accueil", "Nos prestations", "Aides financières", "
 export const materials = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois", "Chaudière électrique", " PAC air/air", "PAC air/eau", "PAC géothermique", "PAC hydrothermique", "Climatiseur", "Chauffe-eau"];
 
 export const prestations = [
-  {
-    title: 'Chaudière',
-    image: '/images/chaudiere.webp',
-  },
+
   {
     title: 'Pompe à chaleur',
     image: '/images/pompe-chaleur-small.webp',
@@ -18,6 +15,10 @@ export const prestations = [
   {
     title: 'Chauffe-eau',
     image: '/images/chauffe-eau-small.webp',
+  },
+  {
+    title: 'Chaudière',
+    image: '/images/chaudiere.webp',
   },
 ]
 

@@ -4,7 +4,7 @@ import { Element } from 'react-scroll';
 export default function LayoutSection({ children, categoryName }) {
 
   const variants = {
-    hidden: { opacity: 0, y: 250},
+    hidden: { opacity: 0, y: 210},
     visible: { 
       opacity: 1, y: 0, 
       transition: {
