@@ -12,7 +12,7 @@ export default function Services() {
       <h2 className="text-justify mb-6 md:mb-10 md:text-xl">
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </h2>
-      <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full lg:bg-blue-light lg:py-8 lg:rounded-xl">
+      <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full lg:bg-white lg:py-8 lg:rounded-xl">
         {services.map((service, index) => (
           <div 
             key={index} 

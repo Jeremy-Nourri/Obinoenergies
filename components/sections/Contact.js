@@ -205,7 +205,7 @@ export default function Contact() {
         </p>
 
         <div className="flex items-center justify-center w-full">
-          <button type="submit" className="w-44 text-lg md:text-xl text-white font-semibold text-center bg-orange rounded-2xl p-3 md:p-4">
+          <button type="submit" className="w-44 text-lg md:text-xl text-white font-semibold text-center bg-orange hover:bg-blue rounded-2xl p-3 md:p-4">
              Envoyer
           </button>
         </div>

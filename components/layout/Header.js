@@ -20,7 +20,7 @@ export default function Header() {
   }
 
   return (
-    <header className="lg:z-50 lg:shadow-sm lg:shadow-zinc-500 w-full flex justify-between items-center py-4 px-2 md:py-6 lg:py-2 md:px-6 bg-blue">
+    <header className="w-full flex justify-between items-center bg-blue shadow-sm shadow-zinc-500 py-4 px-2 md:py-6 md:px-6 lg:py-2">
     
       <div className='w-2/5 lg:w-[14%]'>
         <Image 
@@ -36,7 +36,7 @@ export default function Header() {
         <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
           {categories.map((category, index) => (
             <li key={index} className="mx-2 cursor-pointer">
-              <Link to={`${category}`} role="menuitem" className="text-white text-xl font-semibold" smooth duration={1000}>
+              <Link to={`${category}`} role="menuitem" className="mx-2 text-white text-xl font-semibold hover:text-orange" smooth duration={1000}>
                 {category}
               </Link>
             </li>
@@ -44,9 +44,9 @@ export default function Header() {
         </ul>
       </nav>
 
-      <div className="lg:hidden btn btn-circle md:btn-lg z-50 absolute top-5 right-16 md:top-12 md:right-28">
+      <div className="lg:hidden btn btn-circle z-50 absolute top-5 right-16 md:btn-lg md:top-8 md:right-28">
         <a 
-          className="w-48 text-lg md:text-xl md:p-4 text-white font-semibold text-center rounded-2xl p-3"
+          className="text-lg md:text-xl "
           href="tel:0700000000"
           title="Appeler Obino Energies"
           role="button"
@@ -60,7 +60,7 @@ export default function Header() {
 
 
         <label
-          className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 md:top-12 md:right-5"
+          className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 md:top-8 md:right-5"
           htmlFor="menu-toggle"
         >
           {/* this hidden checkbox controls the state */}
@@ -92,7 +92,7 @@ export default function Header() {
               key={index}
               role="none"
             >
-              <Link className="block text-white text-xl font-semibold my-2 pl-4 py-7 border-b-4" 
+              <Link className="block text-white text-xl font-semibold my-2 pl-4 py-7 border-b-4 md:py-10" 
                 to={`${category}`} smooth duration={1000} role="menuitem" onClick={() => changeChecked()}>
                 {category}
               </Link>
