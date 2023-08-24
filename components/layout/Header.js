@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 import Image from 'next/image'
 import { getCategories } from "@/data/dataServices";
 import { useState, useRef } from "react";
@@ -20,6 +20,7 @@ export default function Header() {
   }
 
   return (
+    <Element name="header">
     <header className="w-full flex justify-between items-center bg-blue shadow-sm shadow-zinc-500 py-4 px-2 md:py-6 md:px-6 lg:py-2">
     
       <div className='w-2/5 lg:w-[14%]'>
@@ -32,17 +33,18 @@ export default function Header() {
         />
       </div>     
 
-      <nav className="hidden lg:block" aria-label="Obino énergies">
-        <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
-          {categories.map((category, index) => (
-            <li key={index} className="mx-2 cursor-pointer">
-              <Link to={`${category}`} role="menuitem" className="mx-2 text-white text-xl font-semibold hover:text-orange" smooth duration={1000}>
-                {category}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav className="hidden lg:block" aria-label="Obino énergies">
+          <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
+            {categories.map((category, index) => (
+              <li key={index} className="mx-2 cursor-pointer">
+                <Link to={`${category}`} role="menuitem" className="mx-2 text-white text-xl font-semibold hover:text-orange" smooth duration={1000}>
+                  {category}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
 
       <div className="lg:hidden btn btn-circle z-50 absolute top-5 right-16 md:btn-lg md:top-8 md:right-28">
         <a 
@@ -103,5 +105,6 @@ export default function Header() {
       </nav>
 
     </header>
+    </Element>
   );
 }

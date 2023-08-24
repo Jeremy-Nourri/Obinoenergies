@@ -6,6 +6,8 @@ import FinancialHelp from '@/components/sections/FinancialHelp'
 import Guide from '@/components/sections/Guide'
 import Contact from '@/components/sections/Contact'
 import LayoutSection from '@/components/layout-section/LayoutSection'
+import ArrowToScroll from '@/components/ui/ArrowToScroll'
+
 
 export default function Page() {
   return (
@@ -14,6 +16,7 @@ export default function Page() {
         <title>Obino Energies</title>
       </Head>
       <Layout>
+        <ArrowToScroll />
         <Hero />
         <LayoutSection categoryName="Nos prestations">
           <Services />
