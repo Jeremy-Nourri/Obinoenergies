@@ -9,7 +9,6 @@ import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 
 
-
 export default function Contact() {
 
   const materials = getMaterials();

@@ -11,7 +11,7 @@ export default function ArrowToScroll() {
         smooth={true}
         duration={1000}
         title="Revenir au menu"
-        activeStyle={{ display: "none" }}
+        activeClass={"hidden"}
       >
         <BsFillArrowUpSquareFill className="text-5xl text-slate-900 cursor-pointer hover:text-slate-700" />
       </Link>
