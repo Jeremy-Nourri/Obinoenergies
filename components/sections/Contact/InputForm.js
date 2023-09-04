@@ -12,7 +12,7 @@ export default function Input({ type, name, label, pattern, errorMessage }) {
   };
 
   return (
-    <div className="flex flex-col md:w-5/12">
+    <div className="flex flex-col md:w-[46%]">
       <label htmlFor={name} className="text-base md:text-lg font-semibold leading-none">
         {label}
       </label>

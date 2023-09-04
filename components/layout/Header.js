@@ -64,7 +64,6 @@ export default function Header() {
 
           <label
             className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 md:top-8 md:right-5"
-            htmlFor="menu-toggle"
           >
             {/* this hidden checkbox controls the state */}
             <input 
@@ -72,7 +71,6 @@ export default function Header() {
               className="w-full" 
               onChange={() => setIsMenuOpen(!isMenuOpen)} 
               ref={inputRef}
-              id="menu-toggle"
               aria-checked={isMenuOpen}
             />
 

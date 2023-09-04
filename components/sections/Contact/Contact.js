@@ -83,7 +83,7 @@ export default function Contact() {
         onSubmit={sendEmail}
       >
 
-        <div className="w-full md:flex md:items-center md:justify-around">
+        <div className="w-full md:flex md:items-center md:justify-between">
           <InputForm
             label="Nom"
             name="name"
@@ -104,7 +104,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="w-full md:flex md:items-center md:justify-around">
+        <div className="w-full md:flex md:items-center md:justify-between">
           <InputForm
             label="Téléphone"
             name="phone"
@@ -125,7 +125,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="w-full md:flex md:items-center md:justify-around">
+        <div className="w-full md:flex md:items-center md:justify-between">
           <SelectForm
             label="Type d'intervention"
             name="prestation"

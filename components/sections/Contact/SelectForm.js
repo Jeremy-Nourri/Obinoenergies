@@ -1,7 +1,7 @@
 
 export default function Select({ name, label, options }) {
   return (
-    <div className="flex flex-col mt-5 md:w-5/12">
+    <div className="flex flex-col mt-5 md:w-[46%]">
       <label htmlFor={name} className="text-base md:text-lg font-semibold leading-none" >
         {label}
       </label>

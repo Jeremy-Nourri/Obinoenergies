@@ -48,20 +48,20 @@ export default function Services() {
           Une chaudière bien entretenue c'est :
         </p>
         <ul className='mb-1 text-sm md:text-lg'>
-          <li >
-            <AiOutlineCheckCircle className="inline-block mr-2 text-2xl  text-green-500 md:text-4xl" />
+          <li className='flex items-center mb-1'>
+            <AiOutlineCheckCircle className="inline-block mr-2 text-xl  text-green-500 md:text-3xl" />
             Une durée de vie prolongée
           </li>
-          <li >
-            <AiOutlineCheckCircle className="inline-block mr-2 text-2xl text-green-500 md:text-4xl" />
+          <li className='flex items-center mb-1'>
+            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
             Un meilleur rendement
           </li>
-          <li >
-            <AiOutlineCheckCircle className="inline-block mr-2 text-2xl text-green-500 md:text-4xl" />
+          <li className='flex items-center mb-1'>
+            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
             Moins de risque de panne
           </li>
-          <li>
-            <AiOutlineCheckCircle className="inline-block mr-2 text-2xl text-green-500 md:text-4xl" />
+          <li className='flex items-center mb-1'>
+            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
             Plus de sécurité
           </li>
         </ul>
