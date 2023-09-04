@@ -2,7 +2,6 @@ import { Element } from 'react-scroll'
 import Image from 'next/image'
 import banner from '../../public/images/banner-color.webp'
 import imageIntro from '../../public/images/image-intro2.webp'
-import entretienChaudiere from '../../public/images/entretien-chaudiere.webp'
 
 export default function Hero() {
   return (
@@ -11,12 +10,13 @@ export default function Hero() {
         <Image
           src={imageIntro}
           alt="Obino Energies"
-          priority
+          priority={true}
           sizes="100vw"
           className="w-full h-auto opacity-70 bg-gray-light" />
         <Image
           src={banner}
           alt="Obino Energies"
+          priority={true}
           sizes='100vw'
           className="w-full h-auto lg:absolute lg:-bottom-3" />
 

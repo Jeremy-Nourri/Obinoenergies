@@ -2,11 +2,14 @@ export const categories = ["Accueil", "Nos prestations", "Aides financières", "
 
 export const materials = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois", "Chaudière électrique", " PAC air/air", "PAC air/eau", "PAC géothermique", "PAC hydrothermique", "Climatiseur", "Chauffe-eau"];
 
+export const services = ["Installation", "Entretien", "Dépannage"];
+
+
 export const prestations = [
 
   {
     title: 'Pompe à chaleur',
-    image: '/images/pompe-chaleur-small.webp',
+    image: '/images/pompe-chaleur.webp',
   },
   {
     title: 'Climatiseur',

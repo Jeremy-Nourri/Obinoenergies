@@ -4,7 +4,7 @@ import coverGuide from '../../public/images/changer-chauffage.webp'
 export default function Guide() {
   return (    
     <>
-      <p className="text-lg text-center font-bold mb-4 md:text-3xl">
+      <p className="text-lg text-center font-bold mb-4 md:text-2xl">
         Changer son chauffage
       </p>
       <div className="w-4/6 mx-auto ">

@@ -30,13 +30,14 @@ export default function Header() {
             width={500}
             height={500}
             className='w-auto h-auto'
+            priority={true}
           />
         </div>     
 
         <nav className="hidden lg:block" aria-label="Obino énergies">
-          <ul className="hidden lg:flex justify-evenly" role="menubar" aria-label="Obino énergies">
+          <ul className="hidden lg:flex justify-evenly" role="menu" aria-label="Obino énergies">
             {categories.map((category, index) => (
-              <li key={index} className="mx-2 cursor-pointer">
+              <li key={index} className="mx-2 cursor-pointer" role="menuitem">
                 <Link to={`${category}`} role="menuitem" className="mx-2 text-white hover:text-orange text-xl font-semibold" smooth duration={1000}>
                   {category}
                 </Link>
@@ -86,7 +87,7 @@ export default function Header() {
           <ul
             id="menu-items"
             className={`w-full md:w-1/2 flex-col items-center z-40 bg-blue ${isMenuOpen ? "menu-items-open" : "menu-items-closed"}`}
-            role="menubar"
+            role="menu"
             aria-label="Obino énergies"
           >
             {categories.map((category, index) => (

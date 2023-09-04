@@ -1,4 +1,4 @@
-import { categories, prestations, materials } from "./data";
+import { categories, prestations, materials, services } from "./data";
 
 
 export function getCategories() {
@@ -11,4 +11,8 @@ export function getPrestations() {
 
 export function getMaterials() {
   return materials;
+}
+
+export function getServices() {
+  return services;
 }
