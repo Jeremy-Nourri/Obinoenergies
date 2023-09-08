@@ -10,7 +10,7 @@ export default function Services() {
 
     <>
 
-      <h2 className="text-justify mb-6 md:mb-1 text-sm0 md:text-xl">
+      <h2 className="text-justify mb-6 text-sm0 md:text-xl">
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </h2>
       <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full lg:bg-white lg:py-8 lg:rounded-xl">

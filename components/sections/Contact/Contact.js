@@ -46,7 +46,7 @@ export default function Contact() {
 
   return (
     <>      
-      <div className="flex flex-col items-center justify-center px-2 my-8">
+      <div className="flex flex-col items-center justify-center px-2 my-4">
 
         <div className="flex content-center justify-center">
           <BsFillTelephoneFill className="text-xl md:text-2xl text-orange mr-2 md:mr-4" />
