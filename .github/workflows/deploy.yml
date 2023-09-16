@@ -1,0 +1,27 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: npm
+        run: npm install
+
+      - name: obino-energies
+        run: npm run build
+
+      - name: Deploy to VPS
+        run: |
+          scp -r ./build ubuntu@vps-69cc8d70:/projects/Obinoenergies
+          ssh ubuntu@vps-69cc8d70 "cd /projects/Obinoenergies && pm2 restart obino-energies"
+        env:
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
