@@ -1,12 +1,17 @@
 import { useRef, useState } from "react";
+import dynamic from 'next/dynamic';
 import emailjs from '@emailjs/browser';
 import { BsFillTelephoneFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
 
 import { getMaterials, getServices } from "@/data/dataServices";
 
-import Modal from "@/components/ui/Modal";
+
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
+
+const Modal = dynamic(() => import('@/components/ui/Modal'), {
+  ssr: false,
+});
 
 
 export default function Contact() {
@@ -62,7 +67,7 @@ export default function Contact() {
             title="Appeler Obino Energies"
             role="button"
           >
-            0700000000
+            07 81 63 62 56
           </a>
 
         </div>
