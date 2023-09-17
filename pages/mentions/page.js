@@ -12,7 +12,7 @@ export default function Mentions() {
         <p>Jonathan Obino</p>
         <p>229 rue de Solférino</p>
         <p>59000 Lille</p>
-        <p>06 00 00 00 00</p>
+        <p>07 81 63 62 56</p>
         <p>obinoenergies@gmail.com</p>
         <p>SIRET : 95086788700016</p>
         <p>SIREN : 950 867 887</p>
