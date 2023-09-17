@@ -1,27 +1,45 @@
-name: Deploy to Server
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: npm
-        run: npm install
-
-      - name: obino-energies
-        run: npm run build
-
-      - name: Deploy to VPS
-        run: |
-          scp -r ./build ubuntu@vps-69cc8d70:/projects/Obinoenergies
-          ssh ubuntu@vps-69cc8d70 "cd /projects/Obinoenergies && pm2 restart obino-energies"
-        env:
-          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Cache dependencies and build files
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.npm
+          ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+    - name: Deploy to OVH VPS
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        script: |
+          cd /home/ubuntu/projects/Obinoenergies
+          git pull
+          npm install --production
+          npm run build
+          pm2 start npm --name "obino-energies" -- start
