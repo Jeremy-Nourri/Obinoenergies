@@ -43,4 +43,5 @@ jobs:
           git pull
           npm install --production
           npm run build
+          pm2 delete obino-energies || true
           pm2 start npm --name "obino-energies" -- start
