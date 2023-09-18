@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '@/components/layout/Layout'
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
-import FinancialHelp from '@/components/sections/FinancialHelp'
+import Offers from '@/components/sections/Offers'
 import Guide from '@/components/sections/Guide'
 import Contact from '@/components/sections/Contact/Contact'
 import LayoutSection from '@/components/layout-section/LayoutSection'
@@ -21,8 +21,8 @@ export default function Page() {
         <LayoutSection categoryName="Nos prestations">
           <Services />
         </LayoutSection>
-        <LayoutSection categoryName="Aides financières">
-          <FinancialHelp />
+        <LayoutSection categoryName="Nos offres entretien">
+          <Offers />
         </LayoutSection>
         <LayoutSection categoryName="Guide">
           <Guide />

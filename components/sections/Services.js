@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import { Link } from 'react-scroll';
 import { getPrestations } from '@/data/dataServices';
-import { AiOutlineCheckCircle } from "react-icons/ai";
+
 
 export default function Services() {
 
@@ -10,9 +11,16 @@ export default function Services() {
 
     <>
 
-      <h2 className="text-justify mb-6 text-sm0 md:text-xl">
+      <h2 className="text-justify mb-2 text-sm md:text-lg">
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </h2>
+      <p className="text-justify mb-2 text-sm md:text-lg">
+          Déplacements possible dans tous les Hauts de France et facturée selon le kilométrage. 
+      </p>
+      <Link className="block max-w-fit mx-auto mb-2 text-sm text-center text-blue font-bold hover:text-opacity-80 cursor-pointer md:text-lg" to="Contact" spy={true} smooth={true} duration={1000}>
+        Contactez-nous pour un devis gratuit.
+      </Link>
+
       <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full lg:bg-white lg:py-8 lg:rounded-xl">
         {services.map((service, index) => (
           <div 
@@ -31,41 +39,7 @@ export default function Services() {
             </h3>
           </div>
         ))}
-      </div>
-      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-5/6 md:my-12 md:p-10">
-        <h4 className='mb-4 p-1 rounded bg-white text-blue text-lg text-center font-bold md:text-3xl'>
-          Entretien de votre chaudière
-        </h4>
-        <div className='absolute bottom-4 right-4 w-16 h-16 flex justify-center flex-wrap content-center mx-auto rounded-full border-2 text-center bg-orange md:w-36 md:h-36 md:border-4 md:bottom-8 md:right-8'>
-          <p className='text-center font-bold text-2xl md:text-5xl'>
-            90 €
-          </p>
-        </div>
-        <p className='mb-2 text-sm md:text-xl'>
-          L'entretien annuel est obligatoire et doit être réalisé par un professionnel qualifié. 
-        </p>
-        <p className='mb-1 text-sm md:text-xl font-bold'>
-          Une chaudière bien entretenue c'est :
-        </p>
-        <ul className='mb-1 text-sm md:text-lg'>
-          <li className='flex items-center mb-1'>
-            <AiOutlineCheckCircle className="inline-block mr-2 text-xl  text-green-500 md:text-3xl" />
-            Une durée de vie prolongée
-          </li>
-          <li className='flex items-center mb-1'>
-            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
-            Un meilleur rendement
-          </li>
-          <li className='flex items-center mb-1'>
-            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
-            Moins de risque de panne
-          </li>
-          <li className='flex items-center mb-1'>
-            <AiOutlineCheckCircle className="inline-block mr-2 text-xl text-green-500 md:text-3xl" />
-            Plus de sécurité
-          </li>
-        </ul>
-
+        
       </div>
 
     </>

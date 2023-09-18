@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import emailjs from '@emailjs/browser';
 import { BsFillTelephoneFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
@@ -21,6 +22,7 @@ export default function Contact() {
 
   const [modalType, setModalType] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [loadingSubmit, setLoadingSubmit] = useState(false);
   
   const handleModalClose = () => {
     setShowModal(false);
@@ -29,6 +31,7 @@ export default function Contact() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setLoadingSubmit(true);
 
     try {
       const result = await emailjs.sendForm(
@@ -39,7 +42,8 @@ export default function Contact() {
       );
       if (result.status === 200) {
         setShowModal(true);
-        setModalType("success"); 
+        setModalType("success");
+        setLoadingSubmit(false); 
         form.current.reset();
       }
     } catch (error) {
@@ -81,15 +85,19 @@ export default function Contact() {
         </p>
       </div>
 
+      <p className="text-center my-4 text-sm md:text-lg">
+          obinojonathan25@gmail.com
+      </p>
+
       <form 
-        className="bg-white shadow-lg rounded-lg py-2 px-6 md:rounded-xl md:py-10 md:px-14 md:shadow-xl lg:px-28 lg:py-6 lg:mt-8 lg:"
+        className="bg-white shadow-lg rounded-lg py-2 px-6 md:rounded-xl md:py-10 md:px-14 md:shadow-xl lg:px-16 lg:py-6 lg:mt-8 lg:"
         ref={form}
         onSubmit={sendEmail}
       >
 
         <div className="w-full md:flex md:items-center md:justify-between">
           <InputForm
-            label="Nom"
+            label="Nom*"
             name="name"
             type="text"
             placeholder="Votre nom"
@@ -98,7 +106,7 @@ export default function Contact() {
             errorMessage={"Le nom est obligatoire"}
           />
           <InputForm
-            label="Adresse e-mail"
+            label="Adresse e-mail*"
             name="email"
             type="email"
             placeholder="Votre adresse e-mail"
@@ -110,7 +118,7 @@ export default function Contact() {
 
         <div className="w-full md:flex md:items-center md:justify-between">
           <InputForm
-            label="Téléphone"
+            label="Téléphone*"
             name="phone"
             type="tel"
             placeholder="Votre numéro de téléphone"
@@ -119,7 +127,7 @@ export default function Contact() {
             errorMessage={"Un numéro de téléphone valide est obligatoire"}
           />
           <InputForm
-            label="Adresse"
+            label="Adresse*"
             name="address"
             type="text"
             placeholder="Votre adresse"
@@ -145,7 +153,7 @@ export default function Contact() {
         <div>
           <div className="w-full mt-5 flex flex-col justify-center">
             <label htmlFor="message" className="text-base md:text-lg font-semibold leading-none">
-              Message
+              Message*
             </label>
             <textarea
               className="h-36 text-base md:text-lg p-3 focus:border-orange mt-4 border rounded resize-none" 
@@ -160,13 +168,20 @@ export default function Contact() {
           </div>
         </div>
 
-        <p className="text-xs md:text-base text-justify my-4">
-          En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler.
+        <p className="text-xs md:text-base text-justify mt-4">
+          En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler. 
+        </p>
+        <p className="text-xs md:text-base text-justify mb-4">
+          Consulter notre <Link href="/mentions-legales" className="text-orange underline">politique de confidentialité</Link>.
         </p>
 
         <div className="flex items-center justify-center w-full">
-          <button type="submit" className="w-44 text-lg md:text-xl text-white font-semibold text-center bg-orange hover:bg-blue rounded-2xl p-3 md:p-4">
-             Envoyer
+          <button type="submit" className="w-44 mb-2 text-lg md:text-xl text-white font-semibold text-center bg-orange hover:bg-opacity-90 rounded-2xl p-3 md:p-4">
+            {loadingSubmit ?
+              <span className="loading loading-spinner loading-md"></span>
+              : 
+              "Envoyer"
+            }
           </button>
         </div>
 

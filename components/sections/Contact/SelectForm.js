@@ -1,7 +1,7 @@
 
 export default function Select({ name, label, options }) {
   return (
-    <div className="flex flex-col mt-5 md:w-[46%]">
+    <div className="flex flex-col mt-4 md:w-[46%]">
       <label htmlFor={name} className="text-base md:text-lg font-semibold leading-none" >
         {label}
       </label>
@@ -9,7 +9,6 @@ export default function Select({ name, label, options }) {
         className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded"
         name={name}
         id={name}
-        required
         aria-label="Choisissez une option"
         defaultValue="non renseigné"
       >

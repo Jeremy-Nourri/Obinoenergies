@@ -27,7 +27,7 @@ export default function Hero() {
           <p className='mt-2 text-lg text-center font-bold italic text-black sm:text-2xl md:text-4xl md:mt-8'>
             Votre confort, notre priorité !
           </p>
-          <Link className="hidden md:block w-36 mx-auto mt-3 text-sm text-white font-semibold text-center bg-blue hover:text-orange rounded-2xl p-3 cursor-pointer md:p-4 md:text-xl md:w-44 md:mt-5"
+          <Link className="hidden md:block w-36 mx-auto mt-3 text-sm text-white font-semibold text-center bg-blue hover:bg-opacity-90 rounded-2xl p-3 cursor-pointer md:p-4 md:text-xl md:w-44 md:mt-5"
             to="Contact"
             spy={true}
             smooth={true}
