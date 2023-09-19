@@ -15,7 +15,7 @@ export default function Services() {
 				Nous vous proposons des prestations de qualité pour l'installation, le dépannage et l'entretien de votre système de chauffage et de climatisation.
       </h2>
       <p className="text-justify mb-2 text-sm md:text-lg">
-          Déplacements possible dans tous les Hauts de France et facturée selon le kilométrage. 
+          Déplacements possibles dans tous les Hauts-de-France et facturée selon le kilométrage. 
       </p>
       <Link className="block max-w-fit mx-auto mb-2 text-sm text-center text-blue font-bold hover:text-opacity-80 cursor-pointer md:text-lg" to="Contact" spy={true} smooth={true} duration={1000}>
         Contactez-nous pour un devis gratuit.

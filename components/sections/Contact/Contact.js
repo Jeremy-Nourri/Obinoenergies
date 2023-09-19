@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="flex flex-col items-center">
           <a 
             className="w-48 text-lg md:text-xl md:p-4 text-white font-semibold text-center bg-orange rounded-2xl p-3"
-            href="tel:0700000000"
+            href="tel:0781636256"
             title="Appeler Obino Energies"
             role="button"
           >

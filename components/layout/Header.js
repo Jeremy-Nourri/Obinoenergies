@@ -50,7 +50,7 @@ export default function Header() {
         <div className="lg:hidden btn btn-circle z-50 absolute top-5 right-16 md:btn-lg md:top-8 md:right-28">
           <a 
             className="text-lg md:text-xl "
-            href="tel:0700000000"
+            href="tel:0781636256"
             title="Appeler Obino Energies"
             role="button"
           >
