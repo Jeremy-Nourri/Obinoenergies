@@ -27,10 +27,6 @@ export default function Header() {
           <Image 
             src={logo}
             alt="Logo Obino énergies"
-            width={500}
-            height={500}
-            className='w-auto h-auto'
-            priority={true}
           />
         </div>     
 

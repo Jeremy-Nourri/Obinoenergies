@@ -42,7 +42,7 @@ export default function Services() {
               src={service.image}
               alt={service.title}
               width={500}
-              height={500}
+              height={320}
               className="rounded-box opacity-80 w-full h-auto"
             />
             <h3 className="w-full bg-white text-blue font-bold text-center absolute bottom-0 z-10 rounded-b-lg py-1 md:py-4 md:text-2xl lg:py-2 lg:text-xl">

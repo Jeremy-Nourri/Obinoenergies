@@ -11,14 +11,12 @@ export default function Hero() {
           src={imageIntro}
           alt="Obino Energies"
           priority={true}
-          sizes="100vw"
-          className="w-full h-auto opacity-70 bg-gray-light" />
+          className="opacity-60 bg-gray-light" />
         <Image
           src={banner}
           alt="Obino Energies"
           priority={true}
-          sizes='100vw'
-          className="w-full h-auto lg:absolute lg:-bottom-3" />
+          className="lg:absolute lg:-bottom-3" />
 
         <div className="w-full absolute top-[15%] py-2 px-4 bg-slate-200 bg-opacity-70 text-center text-black md:top-[25%] md:px-12 md:py-6 lg:top-[20%]" >
           <h1 className="mt-1 mx-auto font-medium text-sm sm:text-base md:text-xl lg:text-2xl lg:w-2/3 ">
