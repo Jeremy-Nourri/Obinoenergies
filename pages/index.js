@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>Obino Energies</title>
+        <title>Obino Energies - Chauffagiste à Béthune, Lens, Lille...</title>
       </Head>
       <Layout>
         <ArrowToScroll />

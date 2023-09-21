@@ -4,7 +4,6 @@ export const materials = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois
 
 export const services = ["Installation", "Entretien", "Dépannage"];
 
-
 export const prestations = [
 
   {
