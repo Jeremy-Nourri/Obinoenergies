@@ -42,7 +42,7 @@ export default function Offers() {
 
           <div className='w-16 h-16 flex items-center justify-center border-2 rounded-full bg-orange md:w-24 md:h-24 md:border-4'>
             <p className='text-center font-bold text-xl md:text-3xl'>
-            90 €
+            99 €
             </p>
           </div>
 

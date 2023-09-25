@@ -9,18 +9,12 @@ export default function Footer() {
         <Image
           src={logo}
           alt="Logo Obino Energies"
-          width={500}
-          height={500}
-          className="w-auto h-auto"
         />
       </div>
-      <div className="text-white font-bold md:text-lg">
-        <p className="mt-2">229 rue de Solférino</p>
-        <p>59000 Lille</p>
-      </div>
 
-      <p className="text-white hover:text-orange text-center text-sm mt-2 md:text-lg">
-        © 2023 - Tous droits réservés - <Link href="/mentions/page"> Mentions légales</Link>
+      <p className="text-white text-center text-sm mt-2 md:text-lg">
+        © 2023 - Tous droits réservés - 
+        <Link className="hover:text-orange" href="/mentions/page"> Mentions légales</Link>
       </p>
     </footer>
   );

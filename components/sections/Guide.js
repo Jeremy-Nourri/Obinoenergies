@@ -17,7 +17,7 @@ export default function Guide() {
         />
       </div>
       <p className="text-justify text-sm mt-2 md:text-lg">
-        Ce guide réalisé par l'Agence de la transition écologique est consacré à l'amélioration et la rénovation du chauffage individuel et de la production d'eau chaude sanitaire. Il propose un panorama complet des équipements de chauffage et d'eau chaude sanitaire et des énergies disponibles pour les maisons individuelles. <a href="https://www.ademe.fr/" target="_blank">
+        Ce guide réalisé par l'Agence de la transition écologique est consacré à l'amélioration et la rénovation du chauffage individuel et de la production d'eau chaude sanitaire. Il propose un panorama complet des équipements disponibles pour les maisons individuelles. <a href="https://www.ademe.fr/" target="_blank">
             Source ADEME
         </a>
       </p>

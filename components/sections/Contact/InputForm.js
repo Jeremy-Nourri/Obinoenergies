@@ -18,7 +18,7 @@ export default function Input({ type, name, label, pattern, errorMessage }) {
       </label>
       <input 
         className={`text-base md:text-lg leading-none text-gray-900 p-3 mt-4 border rounded  focus:border-orange ${!isValid && 'border-red-500'}`}
-        arial-label={`Entrez votre ${label}`} 
+        aria-label={`Entrez votre ${label}`} 
         type={type}
         name={name}
         id={name}

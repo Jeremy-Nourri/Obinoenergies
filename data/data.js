@@ -1,6 +1,6 @@
 export const categories = ["Accueil", "Nos prestations", "Nos offres entretien", "Guide", "Contact"];
 
-export const materials = ["Chaudière gaz", "Chaudière fioul", "Chaudière bois", "Chaudière électrique", " PAC air/air", "PAC air/eau", "PAC géothermique", "PAC hydrothermique", "Climatiseur", "Chauffe-eau"];
+export const materials = ["Chaudière gaz", "Chaudière électrique", " PAC air/air", "PAC air/eau", "Climatiseur", "Chauffe-eau"];
 
 export const services = ["Installation", "Entretien", "Dépannage"];
 

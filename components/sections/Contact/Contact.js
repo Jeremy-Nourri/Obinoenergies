@@ -55,7 +55,7 @@ export default function Contact() {
 
   return (
     <>      
-      <div className="flex flex-col items-center justify-center px-2 my-4">
+      <div className="flex flex-col items-center justify-center my-8 lg:my-0">
 
         <div className="flex content-center justify-center">
           <BsFillTelephoneFill className="text-xl md:text-2xl text-orange mr-2 md:mr-4" />
@@ -100,7 +100,6 @@ export default function Contact() {
             label="Nom*"
             name="name"
             type="text"
-            placeholder="Votre nom"
             pattern="^[a-zA-Z]+(([',. \-][a-zA-Z ])?[a-zA-Z]*)*$"
             title="Doit contenir que des lettres et des espaces"
             errorMessage={"Le nom est obligatoire"}
@@ -109,9 +108,8 @@ export default function Contact() {
             label="Adresse e-mail*"
             name="email"
             type="email"
-            placeholder="Votre adresse e-mail"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            title="Doit contenir une adresse valide avec au moins un @ et un ."
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+            title="Doit contenir une adresse valide"
             errorMessage={"Une adresse e-mail valide est obligatoire"}
           />
         </div>
@@ -121,18 +119,16 @@ export default function Contact() {
             label="Téléphone*"
             name="phone"
             type="tel"
-            placeholder="Votre numéro de téléphone"
             pattern="[0-9]{10}"
             title="Doit contenir 10 chiffres"
             errorMessage={"Un numéro de téléphone valide est obligatoire"}
           />
           <InputForm
-            label="Adresse*"
+            label="Commune*"
             name="address"
             type="text"
-            placeholder="Votre adresse"
             pattern="^[a-zA-Z]+(([',. \-][a-zA-Z ])?[a-zA-Z]*)*$"
-            title="Doit contenir que des lettres, des chiffres et des espaces"
+            title="Peut contenir que des lettres, des espaces et des tirets"
             errorMessage={"L'adresse est obligatoire"}
           />
         </div>
