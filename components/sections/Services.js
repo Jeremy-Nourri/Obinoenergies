@@ -29,7 +29,7 @@ export default function Services() {
       </ul>
 
       <p className="text-justify mb-2 text-sm md:text-lg lg:text-xl">
-        Pour tous vos sytèmes de chauffage, de climatisation et de production d'eau chaude sanitaire :
+        Pour tous vos systèmes de chauffage, de climatisation et de production d'eau chaude sanitaire :
       </p>
 
       <div className="w-3/4 mx-auto lg:flex lg:flex-wrap lg:justify-around lg:w-full lg:bg-white lg:py-8 lg:rounded-xl">

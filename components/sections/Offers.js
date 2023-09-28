@@ -5,7 +5,7 @@ export default function Offers() {
   return (    
     <>
       <p className="mx-auto mb-4 text-center text-sm md:w-[80%] md:text-lg lg:text-xl ">
-        Obino énergies vous propose des offres pour l'entretien de votre systéme de chauffage, de climatisation et de production d'eau chaude.
+        Obino énergies vous propose des offres pour l'entretien de votre système de chauffage, de climatisation et de production d'eau chaude.
       </p>
       <p className="mx-auto text-center mb-2 text-sm font-bold md:w-[75%] md:text-lg  lg:text-xl">
         Un entretien régulier de vos appareils c'est :
@@ -29,7 +29,7 @@ export default function Offers() {
         </li>
       </ul>
 
-      <div className="mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-5/6 md:my-8 md:p-8">
+      <div className="mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-4/6 md:my-8 md:p-8">
         <p className='mb-4 py-1 rounded bg-white text-blue text-lg text-center font-bold md:py-2 md:text-2xl'>
           Chaudière
         </p>
@@ -50,7 +50,7 @@ export default function Offers() {
 
       </div>
 
-      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue-light md:w-5/6 md:mb-8 md:p-8">
+      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue-light md:w-4/6 md:mb-8 md:p-8">
 
         <p className='mb-4 py-1 rounded bg-white text-blue text-lg text-center font-bold md:py-2 md:text-2xl'>
           Pompe à chaleur
@@ -72,7 +72,7 @@ export default function Offers() {
         </p>
       </div>
 
-      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-5/6 md:mb-8 md:p-8">
+      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-4/6 md:mb-8 md:p-8">
 
         <p className='mb-4 py-1 rounded bg-white text-blue text-lg text-center font-bold md:py-2  md:text-2xl'>
           Climatiseur
@@ -94,7 +94,7 @@ export default function Offers() {
         </p>
       </div>
 
-      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue-light md:w-5/6 md:mb-8 md:p-8">
+      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue-light md:w-4/6 md:mb-8 md:p-8">
 
         <p className='mb-4 py-2 rounded bg-white text-blue text-[1rem] text-center font-bold md:py-2  md:text-2xl'>
           Chauffe eau thermodynamique
@@ -113,7 +113,7 @@ export default function Offers() {
         </div>
       </div>
 
-      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-5/6 md:mb-12 md:p-8">
+      <div className="relative mx-auto my-4 p-6 rounded-lg text-white bg-blue md:w-4/6 md:mb-12 md:p-8">
 
         <p className='mb-4 py-1 rounded bg-white text-blue text-lg text-center font-bold md:py-2 md:text-2xl'>
           Chauffe eau électrique
