@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 export default function ArrowToScroll() {
 
   return (
-    <div className="hidden lg:block fixed bottom-10 right-10 z-50">
+    <div className="hidden lg:block fixed bottom-10 right-10 z-50 ">
       <Link
         to="header"
         spy={true}
