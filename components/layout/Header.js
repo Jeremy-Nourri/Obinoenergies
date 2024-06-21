@@ -43,7 +43,7 @@ export default function Header() {
         </nav>
 
 
-        <div className="lg:hidden btn btn-circle z-50 absolute top-5 right-16 bg-orange md:btn-lg md:top-8 md:right-28">
+        <div className="lg:hidden btn btn-circle z-50 absolute top-5 right-16 bg-orange hover:bg-blue md:btn-lg md:top-8 md:right-28">
           <a 
             className="text-lg md:text-xl "
             href="tel:0781636256"
@@ -59,7 +59,7 @@ export default function Header() {
 
 
           <label
-            className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 text-black bg-slate-50 md:top-8 md:right-5"
+            className="btn btn-circle md:btn-lg swap swap-rotate z-50 fixed top-5 right-2 text-black bg-slate-50 hover:bg-slate-200 md:top-8 md:right-5"
           >
             {/* this hidden checkbox controls the state */}
             <input 
