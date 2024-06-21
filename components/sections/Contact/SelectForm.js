@@ -6,7 +6,7 @@ export default function Select({ name, label, options }) {
         {label}
       </label>
       <select
-        className="text-base md:text-lg leading-none text-gray-900 p-3 focus:border-orange mt-4 border rounded"
+        className="text-base md:text-lg leading-none text-gray-900 p-3 bg-slate-50 focus:border-orange mt-4 border rounded"
         name={name}
         id={name}
         aria-label="Choisissez une option"

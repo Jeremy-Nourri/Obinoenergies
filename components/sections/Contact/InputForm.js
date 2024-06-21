@@ -17,7 +17,7 @@ export default function Input({ type, name, label, pattern, errorMessage }) {
         {label}
       </label>
       <input 
-        className={`text-base md:text-lg leading-none text-gray-900 p-3 mt-4 border rounded  focus:border-orange ${!isValid && 'border-red-500'}`}
+        className={`text-base md:text-lg leading-none text-gray-900 p-3 mt-4 border rounded bg-slate-50 focus:border-orange ${!isValid && 'border-red-500'}`}
         aria-label={`Entrez votre ${label}`} 
         type={type}
         name={name}

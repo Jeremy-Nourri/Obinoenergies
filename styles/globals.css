@@ -10,3 +10,7 @@
   @apply duration-1000 ease-in opacity-0 fixed top-0 -right-full
 }
 
+body {
+  background-color: #fffefe;
+}
+

@@ -152,7 +152,7 @@ export default function Contact() {
               Message*
             </label>
             <textarea
-              className="h-36 text-base md:text-lg p-3 focus:border-orange mt-4 border rounded resize-none" 
+              className="h-36 text-base md:text-lg p-3 bg-slate-50 focus:border-orange mt-4 border rounded resize-none" 
               aria-label="Votre message"
               name="message"
               id="message"

@@ -31,7 +31,7 @@ export default function LayoutSection({ children, categoryName }) {
             </span>
           </h2>
 
-          <div className="mt-4 mb-32 px-6 md:px-16 lg:mx-[15%] lg:py-10 lg:bg-zinc-200 lg:bg-opacity-70 lg:rounded-b-2xl lg:mb-20">
+          <div className="mt-4 mb-32 px-6 text-zinc-900 md:px-16 lg:mx-[15%] lg:py-10 lg:bg-zinc-100 lg:bg-opacity-70 lg:rounded-b-2xl lg:mb-20">
             {children}
           </div>
 
